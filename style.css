@@ -1,0 +1,80 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 800px;
+    height: 450px;
+    margin: 50px auto; /* Centered the wrapper vertically */
+    border: 4px solid #333;
+    background-color: #222;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+    color: #ddd;
+}
+
+.btn--roll {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn--roll:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.dice {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.player {
+    position: relative;
+    text-align: center; /* Centered the player class content */
+    margin-top: 20px; /* Added margin-top for spacing */
+}
+
+.player--0 {
+    top: 12rem;
+}
+
+.player--1 {
+    top: 24rem;
+}
+
+.player--active,
+.player--winner {
+    background-color: #003612;
+}
+
+.player--winner .name {
+    font-weight: 700;
+    color: #c7365f;
+}
+
+.hidden {
+    display: none;
+}
